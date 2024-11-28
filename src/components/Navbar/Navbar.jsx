@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import { BiSolidSun, BiSolidMoon } from "react-icons/bi";
 
 const navLinks = [
     {
@@ -23,9 +24,9 @@ const navLinks = [
     },
 ]
 
-const Navbar = () => {
+const Navbar = ({theme, setTheme}) => {
     return (
-        <nav className='shadow-md'>
+        <nav className='shadow-md bg-white dark:bg-dark dark:text-white duration-300'>
             <div className='container'>
                 <div className='flex justify-between items-center'>
                     <div>
@@ -34,8 +35,8 @@ const Navbar = () => {
                     <div className='hidden md:block'>
                         <ul className='flex items-center gap-8'>
                             {navLinks.map((data) => (
-                                    <li key={data.id} className='py-4'>
-                                        <a 
+                                <li key={data.id} className='py-4'>
+                                    <a
                                         href={data.link} className='py-2 
                                         hover:border-b-2 
                                         hover:text-primary 
@@ -44,12 +45,19 @@ const Navbar = () => {
                                         duration-500 text-lg
                                         font-medium
                                         '>{data.name}</a>
-                                    </li>
+                                </li>
                             ))}
                         </ul>
                     </div>
                     <div>
-                        
+                        {
+                            theme === "dark" ? (
+                                <BiSolidSun onClick={() => setTheme("light")} className='text-2xl' />
+                            ) : (
+                                <BiSolidMoon onClick={() => setTheme("dark")} className='text-2xl' />
+                            )
+                        }
+
                     </div>
                 </div>
             </div>
