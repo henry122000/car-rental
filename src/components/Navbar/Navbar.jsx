@@ -24,7 +24,7 @@ const navLinks = [
     },
 ]
 
-const Navbar = ({theme, setTheme}) => {
+const Navbar = ({ theme, setTheme }) => {
     return (
         <nav className='shadow-md bg-white dark:bg-dark dark:text-white duration-300'>
             <div className='container'>
