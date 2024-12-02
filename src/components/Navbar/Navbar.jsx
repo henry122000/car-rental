@@ -9,18 +9,18 @@ const navLinks = [
     },
     {
         id: 2,
-        name: "CARS",
-        link: "/#car",
-    },
-    {
-        id: 3,
         name: "ABOUT",
         link: "/#about",
     },
     {
+        id: 3,
+        name: "CARS",
+        link: "/#cars",
+    },
+    {
         id: 4,
-        name: "BOOKING",
-        link: "/#booking",
+        name: "CONTACT",
+        link: "/#contact",
     },
 ]
 

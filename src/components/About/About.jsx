@@ -3,7 +3,7 @@ import carPng from '../../assets/aboutCar.png'
 
 const About = () => {
   return (
-    <div className='dark:bg-dark bg-slate-100 dark:text-white 
+    <div id="about" className='dark:bg-dark bg-slate-100 dark:text-white 
     duration-300 sm:min-h-[600px] 
     sm:grid sm:place-items-center'>
       <div className="container">

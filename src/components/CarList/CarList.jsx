@@ -25,7 +25,7 @@ const CarListData = [
 ]
 const CarList = () => {
     return (
-        <div data-aos="fade-up" className='pb-24 pt-12 bg-white dark:bg-dark dark dark:text-white'>
+        <div  id="cars" data-aos="fade-up" className='pb-24 pt-12 bg-white dark:bg-dark dark dark:text-white'>
             <div className="container">
                 <h1 className='text-3xl ssm:text-4xl font-semibold font-serif mb-3'>Available Car</h1>
                 <p data-aos="fade-up" className='text-sm pb-10'>Something</p>
@@ -34,7 +34,7 @@ const CarList = () => {
                         {
                             CarListData.map((data) => {
                                 return (
-                                    <div data-aos="fade-up"
+                                    <div key={data.name} data-aos="fade-up"
                                     data-aos-delay={data.aosDelay}
                                     className="space-y-3 border-2 border-gray-300 
                                     hover:border-primary p-3 rounded-xl relative group">
