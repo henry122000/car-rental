@@ -4,8 +4,11 @@ import Home from "./components/Home/Home";
 import About from "./components/About/About";
 import Services from "./components/Services/Services";
 import CarList from "./components/CarList/CarList";
+import Review from './components/Review/Review';
+import Contact from './components/Contact/Contact';
 import AOS from "aos";
 import "aos/dist/aos.css";
+
 
 const App = () => {
 
@@ -43,6 +46,8 @@ const App = () => {
       <About />
       <Services />
       <CarList />
+      <Review />
+      <Contact />
     </div>
   )
 }
